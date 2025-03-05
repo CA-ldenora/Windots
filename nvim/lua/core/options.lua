@@ -14,7 +14,16 @@ if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
     opt.shellquote = ""
     opt.shellxquote = ""
 end
-
+-- Highlight when yanking (copying) text
+--  Try it with yap in normal mode
+--  See :help vim.highlight.on_yank()
+vim.api.nvim_create_autocmd("TextYankPost", {
+    desc = "Highlight when yanking (copying) text", -- Description of the autocommand
+    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }), -- Group to prevent duplicate autocommands
+    callback = function()
+        vim.highlight.on_yank() -- Function that highlights the text after yanking
+    end,
+})
 -- UI/General
 opt.number = true
 opt.relativenumber = true
