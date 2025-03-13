@@ -88,6 +88,24 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": true,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
+                "hidden": false,
+                "name": "Ubuntu 22.04.5 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
             }
         ]
     },
